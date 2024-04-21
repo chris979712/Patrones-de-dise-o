@@ -3,7 +3,7 @@ package builder.builders;
 import builder.classes.Character;
 
 
-public class KnightCharacterBuilder implements CharacterBuilder{
+public class KnightCharacterBuilder extends CharacterBuilder{
     Character knight;
 
     @Override

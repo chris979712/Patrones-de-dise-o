@@ -2,7 +2,7 @@ package builder.builders;
 
 import builder.classes.Character;
 
-public class WizzardCharacterBuilder implements CharacterBuilder{
+public class WizzardCharacterBuilder extends CharacterBuilder{
     Character wizzard;
 
     @Override
@@ -13,15 +13,6 @@ public class WizzardCharacterBuilder implements CharacterBuilder{
     @Override
     public Character getCharacter() {
         return this.wizzard;
-    }
-
-    @Override
-    public void setAgility(String agility) {
-        this.wizzard.setAgility(agility);
-    }
-    @Override
-    public void setArmor(String armor) {
-        this.wizzard.setArmor(armor);
     }
 
     @Override
@@ -44,8 +35,4 @@ public class WizzardCharacterBuilder implements CharacterBuilder{
         this.wizzard.setType(type);
     }
 
-    @Override
-    public void setWeapon(String weapon) {
-        this.wizzard.setWeapon(weapon);
-    }
 }
